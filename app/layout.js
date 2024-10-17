@@ -1,31 +1,20 @@
-// import localFont from "next/font/local";
+// app/layout.js
+"use client";
+
+// import Sidebar from "@/components/Sidebar";
 import "./globals.css";
 
-// const geistSans = localFont({
-//   src: "./fonts/GeistVF.woff",
-//   variable: "--font-geist-sans",
-//   weight: "100 900",
-// });
-// const geistMono = localFont({
-//   src: "./fonts/GeistMonoVF.woff",
-//   variable: "--font-geist-mono",
-//   weight: "100 900",
-// });
+// export const metadata = {
+//   title: "Nextjs Healthcare",
+//   description: "This is a project from DevEmpower Healthcare channel",
+// };
 
-export const metadata = {
-  title: "Nextjs Healthcare",
-  description: "This is a projetct from DevEmpower Healthcare channel",
-};
-
-export default function RootLayout({ children }) {
+export default function RootLayout({ children}) {
   return (
     <html lang="en">
       <body>
-        {children}
+      <main>{children}</main>
       </body>
     </html>
   );
 }
-
-
-// className={`${geistSans.variable} ${geistMono.variable}`}
