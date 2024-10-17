@@ -1,17 +1,23 @@
-import React from "react";
+"use client"
+
+// app/page.js
+import { useEffect } from 'react';
+import { useRouter } from 'next/navigation'; // Utilisez ce chemin pour le routage
 
 const HomePage = () => {
+  const router = useRouter();
+
+  useEffect(() => {
+    // Redirection vers le tableau de bord après le premier rendu
+    router.push('/landing-page');
+  }, [router]);
+
   return (
     <div>
-      <h1>HomePage</h1>
-      <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto sint qui
-        ex. Iusto quam corrupti necessitatibus quidem, minus ipsa aliquid. Sunt
-        eaque quaerat eveniet. Nostrum assumenda delectus repellendus dolorem
-        voluptatum.
-      </p>
+      {/* <h1>Bienvenue sur notre application !</h1> */}
     </div>
   );
 };
 
 export default HomePage;
+
