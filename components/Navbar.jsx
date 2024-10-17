@@ -1,6 +1,7 @@
 "use client";
 import React, { useState } from 'react';
 import Link from 'next/link';
+import Image from 'next/image';
 
 const Navbar = () => {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
@@ -32,7 +33,11 @@ const Navbar = () => {
           </div>
           <div className="flex flex-1 items-center justify-center sm:items-center sm:justify-center">
             <div className="flex flex-shrink-0 items-center">
-              <img className="h-8 w-auto" src="./images/image 16.png" alt="Your Company" />
+              <Image  src="/images/image 16.png"
+        alt="Votre entreprise"
+        width={500} // Spécifiez les dimensions réelles
+        height={300}
+        className="w-full h-auto rounded-lg" />
               <Link href="/" className="px-3 py-2 text-sm font-medium text-white" aria-current="page">
                 Health<span>car</span>
               </Link>

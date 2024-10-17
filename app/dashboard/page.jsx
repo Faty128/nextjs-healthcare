@@ -6,6 +6,7 @@ import { FaArrowTrendUp, FaArrowTrendDown } from "react-icons/fa6";
 import { IoIosArrowDown } from "react-icons/io";
 import { useState } from 'react';
 import Sidebar from "@/components/Sidebar";
+import Image from "next/image";
 
 
 const DashboardPage = () => {
@@ -79,7 +80,13 @@ const DashboardPage = () => {
             </div>
           </div>
           <div className="flex text-md justify-around items-center w-40 p-1 text-gray-500 border border-gray-300 rounded-[1rem]">
-            <img src="./images/Ellipse 38.png" alt="ellipse" />
+            <Image
+              src="/images/Ellipse 38.png" 
+              alt="ellipse"
+              width={40} // Spécifiez la largeur de l'image (en pixels)
+              height={40} // Spécifiez la hauteur de l'image (en pixels)
+              className="rounded-full" // Classe Tailwind pour rendre l'image ronde
+            />
             Dr. Kim
           </div>
         </div>
@@ -130,10 +137,12 @@ const DashboardPage = () => {
               </div>
             </div>
             <div className="flex pt-10 -mt-28 absolute">
-              <img
-                src="./images/unsplash_7bMdiIqz_J4.png"
+              <Image
+                src="/images/unsplash_7bMdiIqz_J4.png"
                 alt="Dr-Kim"
-                className="w-72 h-64 ms-[440px]"
+                width={290} 
+                height={258} 
+                className="ms-[440px]"
               />
             </div>
           </div>
@@ -253,7 +262,7 @@ const DashboardPage = () => {
                         <p className="text-[#12898399] text-sm">Report</p>
                       </div>
                       </div>
-                      <div className="w-[60px] h-[30px] rounded-md bg-[#c4eeec99] border-gray-700">
+                      <div className="w-[60px] h-[30px] rounded-md bg-[#c4eeec99] border-gray-700 py-2">
                         <span className="text-xs text-[#12898399] p-2">9:50AM</span>
                       </div>
                   </div>
@@ -304,23 +313,35 @@ const DashboardPage = () => {
                 </div>
 
                 <div className="flex absolute bottom-48 justify-center items-center gap-7 p-4 text-center">
-                  <div>
-                    <img src="./images/Group.png" alt="fever" />
-                    <p>Fever</p>
-                  </div>
-                  <div>
-                    <img src="./images/Group 48095511.png" alt="cough" />
-                    {/* <p>Cough</p> */}
-                  </div>
-                  <div>
-                    <img
-                      src="./images/Group (1).png"
-                      alt="heart burn"
-                      className="ms-4"
-                    />
-                    <p>Heart Burn</p>
-                  </div>
-                </div>
+      <div>
+        <Image
+          src="/images/Group.png" 
+          alt="fever"
+          width={45} 
+          height={45} 
+        />
+        <p>Fever</p>
+      </div>
+      <div>
+        <Image
+          src="/images/Group 48095511.png" 
+          alt="cough"
+          width={45} 
+          height={45} 
+        />
+        {/* <p>Cough</p> */}
+      </div>
+      <div>
+        <Image
+          src="/images/Group (1).png" 
+          alt="heart burn"
+          width={45} 
+          height={45} 
+          className="ms-4" // Classes Tailwind CSS
+        />
+        <p>Heart Burn</p>
+      </div>
+    </div>
                 <div class="border-t border-[#58B6DE80] absolute bottom-44 min-w-72 m-4 border-[1.25px]"></div>
                 <div className="absolute bottom-6 text-xs justify-center items-start m-3  space-y-4">
                   <div className="flex justify-start items-start gap-3">
@@ -363,7 +384,12 @@ const DashboardPage = () => {
               Equitable medical education with efforts toward real change.
             </p>
             <div>
-              <img src="./images/Rectangle 39896.png" alt="img-pharmaci" />
+            <Image
+            src="/images/Rectangle 39896.png" 
+            alt="img-pharmaci"
+            width={500} 
+            height={300} 
+          />
             </div>
           </div>
         </div>
