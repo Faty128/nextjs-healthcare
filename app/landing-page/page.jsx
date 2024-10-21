@@ -63,12 +63,26 @@ const LandingPage = () => {
                 layout="fill"
                 className="min-w-full h-full object-cover"
               />
+              
               <Image
                 src="/images/image 17.png"
                 alt="Deuxième Image"
                 width={360}
                 height={360}
                 className="absolute -top-12 left-10 object-cover"
+              />
+              <div className="absolute p-3 top-14 right-2 object-cover rounded-lg bg-[#FFFFFF] w-[150px] shadow-md">
+                <div className="flex justify-center items-center gap-2">
+                  <span className="text-[#007E85] text-xl font-semibold">24/7</span>
+                  <p className="text-lg">service</p>
+                </div>
+              </div>
+              <Image
+                src="/images/Group 8.png"
+                alt="Deuxième Image"
+                width={180}
+                height={180}
+                className="absolute bottom-8 -left-16 object-cover"
               />
             </div>
           </div>
