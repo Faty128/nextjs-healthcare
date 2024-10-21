@@ -5,7 +5,12 @@ import Image from "next/image";
 import { IoCaretForwardOutline } from "react-icons/io5";
 import { BiToggleRight } from "react-icons/bi";
 import Link from "next/link";
-import { FaFacebookF, FaTwitter, FaLinkedinIn, FaYoutube } from "react-icons/fa";
+import {
+  FaFacebookF,
+  FaTwitter,
+  FaLinkedinIn,
+  FaYoutube,
+} from "react-icons/fa";
 import { RiInstagramFill } from "react-icons/ri";
 
 export const metadata = {
@@ -30,7 +35,7 @@ const LandingPage = () => {
                 <span className="text-[#333333] mr-2">Future</span>
               </h2>
               <p className="mt-6 text-[#504f4f] font-medium text-lg leading-tight">
-                At our hospital, we are dedicated to providing exceptional{" "}
+                At our hospital, we are dedicated to providing exceptional
                 <br />
                 medical care to our patients and their families. Our <br />
                 experienced team of medical professionals, cutting-edge <br />
@@ -58,7 +63,6 @@ const LandingPage = () => {
                 layout="fill"
                 className="min-w-full h-full object-cover"
               />
-
               <Image
                 src="/images/image 17.png"
                 alt="Deuxième Image"
@@ -148,7 +152,7 @@ const LandingPage = () => {
                 You have lots of reasons <br /> to choose us
               </h2>
               <p className="text-gray-600 text-xl  mt-4">
-                Lorem ipsum dolor sit amet consectetur adipiscing eli <br />{" "}
+                Lorem ipsum dolor sit amet consectetur adipiscing eli <br />
                 mattis sit phasellus mollis sit aliquam sit nullam.
               </p>
             </div>
@@ -174,10 +178,10 @@ const LandingPage = () => {
 
         <div className="py-8">
           <h2 className="text-3xl font-bold text-center mb-5 text-[#007E85]">
-            Services we provide{" "}
+            Services we provide
           </h2>
           <p className="text-center mb-8 text-gray-700">
-            Lorem ipsum dolor sit amet consectetur adipiscing elit semper dalar{" "}
+            Lorem ipsum dolor sit amet consectetur adipiscing elit semper dalar
             <br /> elementum tempus hac tellus libero accumsan.
           </p>
 
@@ -319,10 +323,11 @@ const LandingPage = () => {
 
         <div className="py-8">
           <h2 className="text-3xl font-bold text-center mb-5 text-[#007E85]">
-          Meet our team members
+            Meet our team members
           </h2>
           <p className="text-center mb-8 text-gray-700">
-          Lorem ipsum dolor sit amet consectetur adipiscing elit volutpat gravida <br /> malesuada quam commodo id integer nam.
+            Lorem ipsum dolor sit amet consectetur adipiscing elit volutpat
+            gravida <br /> malesuada quam commodo id integer nam.
           </p>
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
@@ -344,23 +349,35 @@ const LandingPage = () => {
                 </p>
                 <div className="flex justify-center items-center gap-4">
                   <div className="w-[38px] h-[38px] p-2 rounded-lg bg-[#007E851A] mb-4">
-                    <Link href="#" className="text-[#00A3FF] text-xl font-semibold">
-                    <FaFacebookF />
+                    <Link
+                      href="#"
+                      className="text-[#00A3FF] text-xl font-semibold"
+                    >
+                      <FaFacebookF />
                     </Link>
                   </div>
                   <div className="w-[38px] h-[38px] p-2 rounded-lg bg-[#007E851A] mb-4">
-                    <Link href="#" className="text-[#00A3FF] text-xl font-semibold">
-                    <FaTwitter />
+                    <Link
+                      href="#"
+                      className="text-[#00A3FF] text-xl font-semibold"
+                    >
+                      <FaTwitter />
                     </Link>
                   </div>
                   <div className="w-[38px] h-[38px] p-2 rounded-lg bg-[#007E851A] mb-4">
-                    <Link href="#" className="text-[#d8af46] text-xl font-semibold">
-                    <RiInstagramFill />
+                    <Link
+                      href="#"
+                      className="text-[#d8af46] text-xl font-semibold"
+                    >
+                      <RiInstagramFill />
                     </Link>
                   </div>
                   <div className="w-[38px] h-[38px] p-2 rounded-lg bg-[#007E851A] mb-4">
-                    <Link href="#" className="text-[#00A3FF] text-xl font-semibold">
-                    <FaLinkedinIn />
+                    <Link
+                      href="#"
+                      className="text-[#00A3FF] text-xl font-semibold"
+                    >
+                      <FaLinkedinIn />
                     </Link>
                   </div>
                 </div>
@@ -385,23 +402,35 @@ const LandingPage = () => {
                 </p>
                 <div className="flex justify-center items-center gap-4">
                   <div className="w-[38px] h-[38px] p-2 rounded-lg bg-[#007E851A] mb-4">
-                    <Link href="#" className="text-[#00A3FF] text-xl font-semibold">
-                    <FaFacebookF />
+                    <Link
+                      href="#"
+                      className="text-[#00A3FF] text-xl font-semibold"
+                    >
+                      <FaFacebookF />
                     </Link>
                   </div>
                   <div className="w-[38px] h-[38px] p-2 rounded-lg bg-[#007E851A] mb-4">
-                    <Link href="#" className="text-[#00A3FF] text-xl font-semibold">
-                    <FaTwitter />
+                    <Link
+                      href="#"
+                      className="text-[#00A3FF] text-xl font-semibold"
+                    >
+                      <FaTwitter />
                     </Link>
                   </div>
                   <div className="w-[38px] h-[38px] p-2 rounded-lg bg-[#007E851A] mb-4">
-                    <Link href="#" className="text-[#d8af46] text-xl font-semibold">
-                    <RiInstagramFill />
+                    <Link
+                      href="#"
+                      className="text-[#d8af46] text-xl font-semibold"
+                    >
+                      <RiInstagramFill />
                     </Link>
                   </div>
                   <div className="w-[38px] h-[38px] p-2 rounded-lg bg-[#007E851A] mb-4">
-                    <Link href="#" className="text-[#00A3FF] text-xl font-semibold">
-                    <FaLinkedinIn />
+                    <Link
+                      href="#"
+                      className="text-[#00A3FF] text-xl font-semibold"
+                    >
+                      <FaLinkedinIn />
                     </Link>
                   </div>
                 </div>
@@ -426,23 +455,35 @@ const LandingPage = () => {
                 </p>
                 <div className="flex justify-center items-center gap-4">
                   <div className="w-[38px] h-[38px] p-2 rounded-lg bg-[#007E851A] mb-4">
-                    <Link href="#" className="text-[#00A3FF] text-xl font-semibold">
-                    <FaFacebookF />
+                    <Link
+                      href="#"
+                      className="text-[#00A3FF] text-xl font-semibold"
+                    >
+                      <FaFacebookF />
                     </Link>
                   </div>
                   <div className="w-[38px] h-[38px] p-2 rounded-lg bg-[#007E851A] mb-4">
-                    <Link href="#" className="text-[#00A3FF] text-xl font-semibold">
-                    <FaTwitter />
+                    <Link
+                      href="#"
+                      className="text-[#00A3FF] text-xl font-semibold"
+                    >
+                      <FaTwitter />
                     </Link>
                   </div>
                   <div className="w-[38px] h-[38px] p-2 rounded-lg bg-[#007E851A] mb-4">
-                    <Link href="#" className="text-[#d8af46] text-xl font-semibold">
-                    <RiInstagramFill />
+                    <Link
+                      href="#"
+                      className="text-[#d8af46] text-xl font-semibold"
+                    >
+                      <RiInstagramFill />
                     </Link>
                   </div>
                   <div className="w-[38px] h-[38px] p-2 rounded-lg bg-[#007E851A] mb-4">
-                    <Link href="#" className="text-[#00A3FF] text-xl font-semibold">
-                    <FaLinkedinIn />
+                    <Link
+                      href="#"
+                      className="text-[#00A3FF] text-xl font-semibold"
+                    >
+                      <FaLinkedinIn />
                     </Link>
                   </div>
                 </div>
@@ -469,23 +510,35 @@ const LandingPage = () => {
                 </p>
                 <div className="flex justify-center items-center gap-4">
                   <div className="w-[38px] h-[38px] p-2 rounded-lg bg-[#007E851A] mb-4">
-                    <Link href="#" className="text-[#00A3FF] text-xl font-semibold">
-                    <FaFacebookF />
+                    <Link
+                      href="#"
+                      className="text-[#00A3FF] text-xl font-semibold"
+                    >
+                      <FaFacebookF />
                     </Link>
                   </div>
                   <div className="w-[38px] h-[38px] p-2 rounded-lg bg-[#007E851A] mb-4">
-                    <Link href="#" className="text-[#00A3FF] text-xl font-semibold">
-                    <FaTwitter />
+                    <Link
+                      href="#"
+                      className="text-[#00A3FF] text-xl font-semibold"
+                    >
+                      <FaTwitter />
                     </Link>
                   </div>
                   <div className="w-[38px] h-[38px] p-2 rounded-lg bg-[#007E851A] mb-4">
-                    <Link href="#" className="text-[#d8af46] text-xl font-semibold">
-                    <RiInstagramFill />
+                    <Link
+                      href="#"
+                      className="text-[#d8af46] text-xl font-semibold"
+                    >
+                      <RiInstagramFill />
                     </Link>
                   </div>
                   <div className="w-[38px] h-[38px] p-2 rounded-lg bg-[#007E851A] mb-4">
-                    <Link href="#" className="text-[#00A3FF] text-xl font-semibold">
-                    <FaLinkedinIn />
+                    <Link
+                      href="#"
+                      className="text-[#00A3FF] text-xl font-semibold"
+                    >
+                      <FaLinkedinIn />
                     </Link>
                   </div>
                 </div>
@@ -509,23 +562,35 @@ const LandingPage = () => {
                 </p>
                 <div className="flex justify-center items-center gap-4">
                   <div className="w-[38px] h-[38px] p-2 rounded-lg bg-[#007E851A] mb-4">
-                    <Link href="#" className="text-[#00A3FF] text-xl font-semibold">
-                    <FaFacebookF />
+                    <Link
+                      href="#"
+                      className="text-[#00A3FF] text-xl font-semibold"
+                    >
+                      <FaFacebookF />
                     </Link>
                   </div>
                   <div className="w-[38px] h-[38px] p-2 rounded-lg bg-[#007E851A] mb-4">
-                    <Link href="#" className="text-[#00A3FF] text-xl font-semibold">
-                    <FaTwitter />
+                    <Link
+                      href="#"
+                      className="text-[#00A3FF] text-xl font-semibold"
+                    >
+                      <FaTwitter />
                     </Link>
                   </div>
                   <div className="w-[38px] h-[38px] p-2 rounded-lg bg-[#007E851A] mb-4">
-                    <Link href="#" className="text-[#d8af46] text-xl font-semibold">
-                    <RiInstagramFill />
+                    <Link
+                      href="#"
+                      className="text-[#d8af46] text-xl font-semibold"
+                    >
+                      <RiInstagramFill />
                     </Link>
                   </div>
                   <div className="w-[38px] h-[38px] p-2 rounded-lg bg-[#007E851A] mb-4">
-                    <Link href="#" className="text-[#00A3FF] text-xl font-semibold">
-                    <FaLinkedinIn />
+                    <Link
+                      href="#"
+                      className="text-[#00A3FF] text-xl font-semibold"
+                    >
+                      <FaLinkedinIn />
                     </Link>
                   </div>
                 </div>
@@ -550,23 +615,35 @@ const LandingPage = () => {
                 </p>
                 <div className="flex justify-center items-center gap-4">
                   <div className="w-[38px] h-[38px] p-2 rounded-lg bg-[#007E851A] mb-4">
-                    <Link href="#" className="text-[#00A3FF] text-xl font-semibold">
-                    <FaFacebookF />
+                    <Link
+                      href="#"
+                      className="text-[#00A3FF] text-xl font-semibold"
+                    >
+                      <FaFacebookF />
                     </Link>
                   </div>
                   <div className="w-[38px] h-[38px] p-2 rounded-lg bg-[#007E851A] mb-4">
-                    <Link href="#" className="text-[#00A3FF] text-xl font-semibold">
-                    <FaTwitter />
+                    <Link
+                      href="#"
+                      className="text-[#00A3FF] text-xl font-semibold"
+                    >
+                      <FaTwitter />
                     </Link>
                   </div>
                   <div className="w-[38px] h-[38px] p-2 rounded-lg bg-[#007E851A] mb-4">
-                    <Link href="#" className="text-[#d8af46] text-xl font-semibold">
-                    <RiInstagramFill />
+                    <Link
+                      href="#"
+                      className="text-[#d8af46] text-xl font-semibold"
+                    >
+                      <RiInstagramFill />
                     </Link>
                   </div>
                   <div className="w-[38px] h-[38px] p-2 rounded-lg bg-[#007E851A] mb-4">
-                    <Link href="#" className="text-[#00A3FF] text-xl font-semibold">
-                    <FaLinkedinIn />
+                    <Link
+                      href="#"
+                      className="text-[#00A3FF] text-xl font-semibold"
+                    >
+                      <FaLinkedinIn />
                     </Link>
                   </div>
                 </div>
@@ -577,10 +654,11 @@ const LandingPage = () => {
 
         <div className="py-8">
           <h2 className="text-3xl font-bold text-center mb-5 text-[#007E85]">
-          Testimonial
+            Testimonial
           </h2>
           <p className="text-center mb-8 text-gray-700">
-          Lorem ipsum dolor sit amet consectetur adipiscing elit semper dalar <br /> elementum tempus hac tellus libero accumsan.
+            Lorem ipsum dolor sit amet consectetur adipiscing elit semper dalar
+            <br /> elementum tempus hac tellus libero accumsan.
           </p>
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
@@ -594,14 +672,16 @@ const LandingPage = () => {
               />
               <div>
                 <h6 className="text-xl font-bold mb-4 text-black">
-                “An amazing service”
+                  “An amazing service”
                 </h6>
                 <p className="text-gray-700 mb-5">
-                Lorem ipsum dolor sit ametolil col <br />
-                consectetur adipiscing lectus a nunc <br />
-                mauris scelerisque sed egestas.
+                  Lorem ipsum dolor sit ametolil col <br />
+                  consectetur adipiscing lectus a nunc <br />
+                  mauris scelerisque sed egestas.
                 </p>
-                <h6 className="text-[#007E85] text-md font-bold">John Carter</h6>
+                <h6 className="text-[#007E85] text-md font-bold">
+                  John Carter
+                </h6>
                 <p className="text-gray-700">CEO at Google</p>
               </div>
             </div>
@@ -616,14 +696,16 @@ const LandingPage = () => {
               />
               <div>
                 <h6 className="text-xl font-bold mb-4 text-text-black">
-                “One of a kind service”
+                  “One of a kind service”
                 </h6>
                 <p className="text-gray-700 mb-5">
-                Ultrices eros in cursus turpis massa <br />
-                tincidunt sem nulla pharetra diam sit <br />
-                amet nisl suscipit adipis.
+                  Ultrices eros in cursus turpis massa <br />
+                  tincidunt sem nulla pharetra diam sit <br />
+                  amet nisl suscipit adipis.
                 </p>
-                <h6 className="text-[#007E85] text-md font-bold">Sophie Moore</h6>
+                <h6 className="text-[#007E85] text-md font-bold">
+                  Sophie Moore
+                </h6>
                 <p className="text-gray-700">MD at Facebook</p>
               </div>
             </div>
@@ -638,12 +720,12 @@ const LandingPage = () => {
               />
               <div>
                 <h6 className="text-xl font-bold mb-4 text-black">
-                “The best service”
+                  “The best service”
                 </h6>
                 <p className="text-gray-700 mb-5">
-                Convallis posuere morbi leo urna <br />
-                molestie at elementum eu facilisis <br />
-                sapien pellentesque habitant.
+                  Convallis posuere morbi leo urna <br />
+                  molestie at elementum eu facilisis <br />
+                  sapien pellentesque habitant.
                 </p>
                 <h6 className="text-[#007E85] text-md font-bold">Andy Smith</h6>
                 <p className="text-gray-700">CEO Dot Austere</p>
@@ -653,64 +735,65 @@ const LandingPage = () => {
         </div>
 
         <div className="py-8">
-          <h1 className="text-4xl font-sans font-bold text-center text-[#007E85] mb-6">Trusted by 10,000+ companies around the world</h1>       
+          <h1 className="text-4xl font-sans font-bold text-center text-[#007E85] mb-6">
+            Trusted by 10,000+ companies around the world
+          </h1>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-6 justify-items-center">
             <div className="p-4 text-black">
-            <Image
-              src="/images/Google.png"
-              alt="Google Image"
-              width={100}
-              height={100}
-              className="object-cover"
-            />
+              <Image
+                src="/images/Google.png"
+                alt="Google Image"
+                width={100}
+                height={100}
+                className="object-cover"
+              />
             </div>
             <div className="p-4 text-black">
-            <Image
-              src="/images/Facebook.png"
-              alt="Facebook Image"
-              width={100}
-              height={100}
-              className="object-cover"
-            />
+              <Image
+                src="/images/Facebook.png"
+                alt="Facebook Image"
+                width={100}
+                height={100}
+                className="object-cover"
+              />
             </div>
             <div className="p-4 text-black">
-            <Image
-              src="/images/YouTube.png"
-              alt="YouTube Image"
-              width={100}
-              height={100}
-              className="object-cover"
-            />
+              <Image
+                src="/images/YouTube.png"
+                alt="YouTube Image"
+                width={100}
+                height={100}
+                className="object-cover"
+              />
             </div>
             <div className="p-4 text-black">
-            <Image
-              src="/images/Pinterest.png"
-              alt="Pinterest Image"
-              width={100}
-              height={100}
-              className="object-cover"
-            />
+              <Image
+                src="/images/Pinterest.png"
+                alt="Pinterest Image"
+                width={100}
+                height={100}
+                className="object-cover"
+              />
             </div>
             <div className="p-4 text-black">
-            <Image
-              src="/images/Twitch.png"
-              alt="Twitch Image"
-              width={100}
-              height={100}
-              className="object-cover"
-            />
+              <Image
+                src="/images/Twitch.png"
+                alt="Twitch Image"
+                width={100}
+                height={100}
+                className="object-cover"
+              />
             </div>
             <div className="p-4 text-black">
-            <Image
-              src="/images/Webflow.png"
-              alt="Webflow Image"
-              width={100}
-              height={100}
-              className="object-cover"
-            />
-            </div>          
+              <Image
+                src="/images/Webflow.png"
+                alt="Webflow Image"
+                width={100}
+                height={100}
+                className="object-cover"
+              />
+            </div>
           </div>
-         
         </div>
 
         <div className="flex justify-center -mt-20">
@@ -722,158 +805,151 @@ const LandingPage = () => {
         <div className="py-8">
           <h2 className="text-center mb-6">Subscribe to our newsletter</h2>
           <div className="flex justify-center gap-4">
-            <input type="text" name="email" id="email" placeholder="Enter your email" className="bg-[#FFFFFF] focus:outline-none border-none rounded-full w-[320px]" />
-            <button className="bg-[#007E85] border-teal-400 rounded-full w-32 h-14 text-white font-semibold">Suscribe</button>
-          </div>
-        </div>
-
-      </div>
-      {/* <footer className="bg-gray-800 text-white py-8">
-      <div className="container mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-4">
-        <div>
-        <div className="flex flex-shrink-0 items-center">
-          <Image
-            src="/images/image 16.png"
-            alt="Votre entreprise"
-            width={600}
-            height={400}
-            className="w-full h-auto rounded-lg"
-          />
-          <h1 className=" py-2 text-2xl font-bold leading-3 text-[#FFFFFF]">
-            Healthcare
-          </h1>
-        </div>
-          <p>
-          Copyright &copy; {new Date().getFullYear()} BRIX Templates <br /> | All Rights Reserved
-        </p>
-        </div>
-        
-        <div>
-          <h2 className="font-bold text-lg mb-2">Colonne 2</h2>
-          <ul>
-            <li><a href="#" className="hover:underline">Lien 1</a></li>
-            <li><a href="#" className="hover:underline">Lien 2</a></li>
-            <li><a href="#" className="hover:underline">Lien 3</a></li>
-          </ul>
-        </div>
-
-        <div>
-          <h2 className="font-bold text-lg mb-2">Colonne 3</h2>
-          <ul>
-            <li><a href="#" className="hover:underline">Lien 1</a></li>
-            <li><a href="#" className="hover:underline">Lien 2</a></li>
-            <li><a href="#" className="hover:underline">Lien 3</a></li>
-          </ul>
-        </div>
-
-        <div>
-          <h2 className="font-bold text-lg mb-2">Colonne 4</h2>
-          <ul>
-            <li><a href="#" className="hover:underline">Lien 1</a></li>
-            <li><a href="#" className="hover:underline">Lien 2</a></li>
-            <li><a href="#" className="hover:underline">Lien 3</a></li>
-          </ul>
-        </div>
-
-        <div>
-          <h2 className="font-bold text-lg mb-2">Colonne 5</h2>
-          <ul>
-            <li><a href="#" className="hover:underline">Lien 1</a></li>
-            <li><a href="#" className="hover:underline">Lien 2</a></li>
-            <li><a href="#" className="hover:underline">Lien 3</a></li>
-          </ul>
-        </div>
-      </div>
-      
-      <div className="text-center mt-4">
-        <p>&copy; {new Date().getFullYear()} Mon Site Web. Tous droits réservés.</p>
-      </div>
-    </footer> */}
-
-<footer className="bg-[#007E85] text-white py-8 px-4">
-      <div className="container mx-auto grid grid-cols-1 lg:grid-cols-12 gap-4">
-        <div className="col-span-4">
-          <div className="flex items-center">
-            <Image
-              src="/images/image 16.png"
-              alt="Votre entreprise"
-              width={60}
-              height={40}
-              className="rounded-lg"
+            <input
+              type="text"
+              name="email"
+              id="email"
+              placeholder="Enter your email"
+              className="bg-[#FFFFFF] focus:outline-none border-none rounded-full w-[320px]"
             />
-            <h1 className="py-2 text-2xl font-bold leading-3 text-[#FFFFFF]">
-              Healthcare
-            </h1>
-          </div>
-          <p className="py-2 px-2">
-            Copyright &copy; {new Date().getFullYear()} BRIX Templates <br /> | All Rights Reserved
-          </p>
-        </div>
-        
-        <div className="col-span-8">
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
-            <div>
-              <h5 className="mb-4 font-semibold font-sans text-xl">Product</h5>
-              <div className="mb-2"><Link href="#">Features</Link></div>
-              <div className="mb-2"><Link href="#">Pricing</Link></div>
-              <div className="mb-2"><Link href="#">Case studies</Link></div>
-              <div className="mb-2"><Link href="#">Reviews</Link></div>
-              <div className="mb-2"><Link href="#">Updates</Link></div>
-            </div>
-            <div>
-              <h5 className="mb-4 font-semibold font-sans text-xl">Company</h5>
-              <div className="mb-2"><Link href="#">About</Link></div>
-              <div className="mb-2"><Link href="#">Contact us</Link></div>
-              <div className="mb-2"><Link href="#">Careers</Link></div>
-              <div className="mb-2"><Link href="#">Culture</Link></div>
-              <div className="mb-2"><Link href="#">Blog</Link></div>
-            </div>
-            <div>
-              <h5 className="mb-4 font-semibold font-sans text-xl">Support</h5>
-              <div className="mb-2"><Link href="#">Getting started</Link></div>
-              <div className="mb-2"><Link href="#">Help center</Link></div>
-              <div className="mb-2"><Link href="#">Server status</Link></div>
-              <div className="mb-2"><Link href="#">Report a bug</Link></div>
-              <div className="mb-2"><Link href="#">Chat support</Link></div>
-            </div>
-            <div>
-              <h5 className="mb-4 font-semibold font-sans text-xl">Follow us</h5>
-              <div className="flex items-center mb-2">
-                <div className="w-[30px] h-[30px] p-2 rounded-lg bg-[#F2F1FA] text-gray-600">
-                  <FaFacebookF />
-                </div>
-                <Link href="#" className="ml-2">Facebook</Link>
-              </div>
-              <div className="flex items-center mb-2">
-                <div className="w-[30px] h-[30px] p-2 rounded-lg bg-[#F2F1FA] text-gray-600">
-                  <FaTwitter />
-                </div>
-                <Link href="#" className="ml-2">Twitter</Link>
-              </div>
-              <div className="flex items-center mb-2">
-                <div className="w-[30px] h-[30px] p-2 rounded-lg bg-[#F2F1FA] text-gray-600">
-                  <RiInstagramFill />
-                </div>
-                <Link href="#" className="ml-2">Instagram</Link>
-              </div>
-              <div className="flex items-center mb-2">
-                <div className="w-[30px] h-[30px] p-2 rounded-lg bg-[#F2F1FA] text-gray-600">
-                  <FaLinkedinIn />
-                </div>
-                <Link href="#" className="ml-2">LinkedIn</Link>
-              </div>
-              <div className="flex items-center mb-2">
-                <div className="w-[30px] h-[30px] p-2 rounded-lg bg-[#F2F1FA] text-gray-600">
-                  <FaYoutube />
-                </div>
-                <Link href="#" className="ml-2">YouTube</Link>
-              </div>
-            </div>
+            <button className="bg-[#007E85] border-teal-400 rounded-full w-32 h-14 text-white font-semibold">
+              Suscribe
+            </button>
           </div>
         </div>
       </div>
-    </footer>
 
+      <footer className="bg-[#007E85] text-white py-8 px-4">
+        <div className="container mx-auto grid grid-cols-1 lg:grid-cols-12 gap-4">
+          <div className="col-span-4">
+            <div className="flex items-center">
+              <Image
+                src="/images/image 16.png"
+                alt="Votre entreprise"
+                width={60}
+                height={40}
+                className="rounded-lg"
+              />
+              <h1 className="py-2 text-2xl font-bold leading-3 text-[#FFFFFF]">
+                Healthcare
+              </h1>
+            </div>
+            <p className="py-2 px-2">
+              Copyright &copy; {new Date().getFullYear()} BRIX Templates <br />
+              | All Rights Reserved
+            </p>
+          </div>
+          <div className="col-span-8">
+            <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
+              <div>
+                <h5 className="mb-4 font-semibold font-sans text-xl">
+                  Product
+                </h5>
+                <div className="mb-2">
+                  <Link href="#">Features</Link>
+                </div>
+                <div className="mb-2">
+                  <Link href="#">Pricing</Link>
+                </div>
+                <div className="mb-2">
+                  <Link href="#">Case studies</Link>
+                </div>
+                <div className="mb-2">
+                  <Link href="#">Reviews</Link>
+                </div>
+                <div className="mb-2">
+                  <Link href="#">Updates</Link>
+                </div>
+              </div>
+              <div>
+                <h5 className="mb-4 font-semibold font-sans text-xl">
+                  Company
+                </h5>
+                <div className="mb-2">
+                  <Link href="#">About</Link>
+                </div>
+                <div className="mb-2">
+                  <Link href="#">Contact us</Link>
+                </div>
+                <div className="mb-2">
+                  <Link href="#">Careers</Link>
+                </div>
+                <div className="mb-2">
+                  <Link href="#">Culture</Link>
+                </div>
+                <div className="mb-2">
+                  <Link href="#">Blog</Link>
+                </div>
+              </div>
+              <div>
+                <h5 className="mb-4 font-semibold font-sans text-xl">
+                  Support
+                </h5>
+                <div className="mb-2">
+                  <Link href="#">Getting started</Link>
+                </div>
+                <div className="mb-2">
+                  <Link href="#">Help center</Link>
+                </div>
+                <div className="mb-2">
+                  <Link href="#">Server status</Link>
+                </div>
+                <div className="mb-2">
+                  <Link href="#">Report a bug</Link>
+                </div>
+                <div className="mb-2">
+                  <Link href="#">Chat support</Link>
+                </div>
+              </div>
+              <div>
+                <h5 className="mb-4 font-semibold font-sans text-xl">
+                  Follow us
+                </h5>
+                <div className="flex items-center mb-2">
+                  <div className="w-[30px] h-[30px] p-2 rounded-lg bg-[#F2F1FA] text-gray-600">
+                    <FaFacebookF />
+                  </div>
+                  <Link href="#" className="ml-2">
+                    Facebook
+                  </Link>
+                </div>
+                <div className="flex items-center mb-2">
+                  <div className="w-[30px] h-[30px] p-2 rounded-lg bg-[#F2F1FA] text-gray-600">
+                    <FaTwitter />
+                  </div>
+                  <Link href="#" className="ml-2">
+                    Twitter
+                  </Link>
+                </div>
+                <div className="flex items-center mb-2">
+                  <div className="w-[30px] h-[30px] p-2 rounded-lg bg-[#F2F1FA] text-gray-600">
+                    <RiInstagramFill />
+                  </div>
+                  <Link href="#" className="ml-2">
+                    Instagram
+                  </Link>
+                </div>
+                <div className="flex items-center mb-2">
+                  <div className="w-[30px] h-[30px] p-2 rounded-lg bg-[#F2F1FA] text-gray-600">
+                    <FaLinkedinIn />
+                  </div>
+                  <Link href="#" className="ml-2">
+                    LinkedIn
+                  </Link>
+                </div>
+                <div className="flex items-center mb-2">
+                  <div className="w-[30px] h-[30px] p-2 rounded-lg bg-[#F2F1FA] text-gray-600">
+                    <FaYoutube />
+                  </div>
+                  <Link href="#" className="ml-2">
+                    YouTube
+                  </Link>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
     </div>
   );
 };
