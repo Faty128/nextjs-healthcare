@@ -190,7 +190,7 @@ const DashboardPage = () => {
               <div className="flex justify-start items-center gap-4 rounded-lg bg-[#F0F9FD] p-2"
               >
                 <div className="w-[50px] h-[50px] p-3 text-center text-white rounded-full shadow-md" style={{ background: 'linear-gradient(66.15deg, #57B4DE -5.25%, #58B6DD 35.43%, #3B29AB 98.77%)' }}>M</div>
-              <p>Montly doctor's meet<br />8 Avril 2021 | 16:00</p>
+              <p>Montly doctor meet<br />8 Avril 2021 | 16:00</p>
               </div>
             </div>
         </div>
