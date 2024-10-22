@@ -15,8 +15,9 @@ import { RiInstagramFill } from "react-icons/ri";
 const ServicesPage = () => {
   return (
     <div className="bg-[#ECECEC]">
-      <div className="bg-[url('/images/Rectangle-1548.png')] bg-cover bg-center h-[100vh] flex items-center justify-center  opacity-2">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 px-4 py-4 gap-80">
+      <div className="relative bg-[url('/images/Rectangle-1548.png')] bg-cover bg-center h-[100vh] flex items-center justify-center">
+        <div className="absolute inset-0 bg-black opacity-50"></div>
+        <div className="relative z-10 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 px-4 py-4 gap-80">
           <div className="flex flex-col items-start mb-2 pt-14">
             <h1 className="text-white text-5xl font-bold font-sans leading-tight">
               Meet the Best <br /> Hospital

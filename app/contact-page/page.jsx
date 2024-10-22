@@ -12,7 +12,9 @@ import { RiInstagramFill } from "react-icons/ri";
 const ContactPage = () => {
   return (
     <div className="bg-[#ECECEC]">
-      <div className="bg-[url('/images/Rectangle-1548.png')] bg-cover bg-center h-[100vh] flex items-center justify-center  opacity-2"></div>
+      <div className="relative bg-[url('/images/Rectangle-1548.png')] bg-cover bg-center h-[100vh] flex items-center justify-center">
+        <div className="absolute inset-0 bg-black opacity-50"></div>{" "}
+      </div>
       <div className="text-center py-8">
         <h6 className="font-sans font-semibold text-lg pt-3">Get In Touch</h6>
         <h1 className="font-sans font-bold text-4xl text-gray-800 pt-3">
