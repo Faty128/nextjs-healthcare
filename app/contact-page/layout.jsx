@@ -1,7 +1,7 @@
 import Navbar from '../../components/Navbar';
 import RootLayout from '../layout';
 
-export default function LandingPageLayout({ children }) {
+export default function ContactPageLayout({ children }) {
   return (
     <RootLayout showSidebar={false}>
       <Navbar />

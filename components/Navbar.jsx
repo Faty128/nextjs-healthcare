@@ -1,5 +1,5 @@
 "use client";
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import Link from "next/link";
 import Image from "next/image";
 
@@ -7,8 +7,19 @@ const Navbar = () => {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
   const toggleMobileMenu = () => {
-    setMobileMenuOpen(!mobileMenuOpen);
+    setMobileMenuOpen((prev) => !prev);
   };
+
+  useEffect(() => {
+    const handleResize = () => {
+      if (window.innerWidth >= 640) {
+        setMobileMenuOpen(false);
+      }
+    };
+
+    window.addEventListener("resize", handleResize);
+    return () => window.removeEventListener("resize", handleResize);
+  }, []);
 
   return (
     <nav className="bg-[#ECECEC]">
@@ -67,32 +78,32 @@ const Navbar = () => {
             <div className="hidden sm:mx-auto sm:block">
               <div className="flex flex-wrap space-x-5">
                 <Link
-                  href="/team"
+                  href="/"
                   className="rounded-md px-3 py-2 text-xl font-roboto font-sans font-semibold text-[#007E85] underline hover:bg-gray-300 hover:text-teal"
                 >
                   Home
                 </Link>
                 <Link
                   href="/services-page"
-                  className="rounded-md px-3 py-2 text-xl font-roboto font-sans font-semibold text-black hover:bg-gray-300 hover:text-black"
+                  className="rounded-md px-3 py-2 text-xl font-roboto font-sans font-semibold text-black hover:text-[#007E85] hover:underline hover:bg-gray-300"
                 >
                   Services
                 </Link>
                 <Link
-                  href="/contact"
-                  className="rounded-md px-3 py-2 text-xl font-roboto font-sans font-semibold text-black hover:bg-gray-300 hover:text-black"
+                  href="/contact-page"
+                  className="rounded-md px-3 py-2 text-xl font-roboto font-sans font-semibold text-black hover:bg-gray-300 hover:text-[#007E85] hover:underline"
                 >
                   Contact Us
                 </Link>
                 <Link
-                  href="/help"
-                  className="rounded-md px-3 py-2 text-xl font-roboto font-sans font-semibold text-black hover:bg-gray-300 hover:text-black"
+                  href="#"
+                  className="rounded-md px-3 py-2 text-xl font-roboto font-sans font-semibold text-black hover:bg-gray-300 hover:text-[#007E85] hover:underline"
                 >
                   Help
                 </Link>
                 <Link
-                  href="/blogs"
-                  className="rounded-md px-3 py-2 text-xl font-roboto font-sans font-semibold text-black hover:bg-gray-300 hover:text-black"
+                  href="#"
+                  className="rounded-md px-3 py-2 text-xl font-roboto font-sans font-semibold text-black hover:bg-gray-300 hover:text-[#007E85] hover:underline"
                 >
                   Blogs
                 </Link>
@@ -122,25 +133,25 @@ const Navbar = () => {
           </Link>
           <Link
             href="/services-page"
-            className="block rounded-md px-3 py-2 text-base font-roboto font-sans font-bold text-black hover:bg-gray-300 hover:text-black"
+            className="block rounded-md px-3 py-2 text-base font-roboto font-sans font-bold text-black hover:bg-gray-300 hover:text-[#007E85] hover:underline"
           >
             Services
           </Link>
           <Link
-            href="/contact"
-            className="block rounded-md px-3 py-2 text-base font-roboto font-sans font-bold text-black hover:bg-gray-300 hover:text-black"
+            href="/contact-page"
+            className="block rounded-md px-3 py-2 text-base font-roboto font-sans font-bold text-black hover:bg-gray-300 hover:text-[#007E85] hover:underline"
           >
             Contact Us
           </Link>
           <Link
             href="/help"
-            className="block rounded-md px-3 py-2 text-base font-roboto font-sans font-bold text-black hover:bg-gray-300 hover:text-black"
+            className="block rounded-md px-3 py-2 text-base font-roboto font-sans font-bold text-black hover:bg-gray-300 hover:text-[#007E85] hover:underline"
           >
             Help
           </Link>
           <Link
             href="/blogs"
-            className="block rounded-md px-3 py-2 text-base font-roboto font-sans font-bold text-black hover:bg-gray-300 hover:text-black"
+            className="block rounded-md px-3 py-2 text-base font-roboto font-sans font-bold text-black hover:bg-gray-300 hover:text-[#007E85] hover:underline"
           >
             Blogs
           </Link>
