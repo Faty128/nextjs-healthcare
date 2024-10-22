@@ -93,26 +93,26 @@ const LandingPage = () => {
             <h1 className="font-bold capitalize text-black text-3xl">
               Find a Doctor
             </h1>
-            <div className="flex flex-col md:flex-row justify-around items-center py-4">
-              <div className="flex-1 md:mr-2 md:mb-0 mb-2">
+            <div className="flex flex-col mx-auto justify-between md:flex-row items-center py-4">
+              <div className="md:w-1/1 md:mr-2 md:mb-0 mb-2">
                 <input
                   type="text"
                   className="w-full h-[66px] rounded-lg border-[#007E85] focus:outline-none hover:border-[#007E85]"
                   placeholder="Name"
                 />
               </div>
-              <div className="flex-1 md:mr-2 md:mb-0 mb-2">
+              <div className="md:w-1/1 md:mr-2 md:mb-0 mb-2">
                 <input
                   type="text"
                   className="w-full h-[66px] rounded-lg border-[#007E85] hover:border-[#007E85]"
                   placeholder="Speciality"
                 />
               </div>
-              <div className="flex items-center gap-4">
+              <div className="flex md:w-1/1 items-center gap-4">
                 <p>Available</p>
                 <BiToggleRight className="text-5xl bg-none text-[#007E85]" />
               </div>
-              <div className="bg-[#007E85] w-full md:w-auto h-[66px] rounded-lg text-center py-4">
+              <div className="bg-[#007E85] md:w-1/1 w-[100px]  h-[66px] rounded-lg text-center py-4">
                 <button className="text-xl text-white">Search</button>
               </div>
             </div>
@@ -170,7 +170,7 @@ const LandingPage = () => {
                 mattis sit phasellus mollis sit aliquam sit nullam.
               </p>
             </div>
-            <div className="flex pt-8 space-x-10">
+            <div className="flex flex-wrap pt-8 space-x-2 gap-y-5">
               <div className="bg-[#007E85] text-white text-center font-bold text-md rounded-full w-[150px] h-[60px] p-4">
                 <button>Get started</button>
               </div>
@@ -817,8 +817,8 @@ const LandingPage = () => {
         </div>
 
         <div className="py-8">
-          <h2 className="text-center mb-6">Subscribe to our newsletter</h2>
-          <div className="flex justify-center gap-4">
+          <h2 className="text-center mb-6 font-semibold text-xl">Subscribe to our newsletter</h2>
+          <div className="flex flex-wrap justify-center gap-4">
             <input
               type="text"
               name="email"
