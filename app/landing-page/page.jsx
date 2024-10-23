@@ -63,7 +63,7 @@ const LandingPage = () => {
                 layout="fill"
                 className="min-w-full h-full object-cover"
               />
-              
+
               <Image
                 src="/images/image 17.png"
                 alt="Deuxième Image"
@@ -73,7 +73,9 @@ const LandingPage = () => {
               />
               <div className="absolute p-3 top-14 right-2 object-cover rounded-lg bg-[#FFFFFF] w-[150px] shadow-md">
                 <div className="flex justify-center items-center gap-2">
-                  <span className="text-[#007E85] text-xl font-semibold">24/7</span>
+                  <span className="text-[#007E85] text-xl font-semibold">
+                    24/7
+                  </span>
                   <p className="text-lg">service</p>
                 </div>
               </div>
@@ -97,14 +99,14 @@ const LandingPage = () => {
               <div className="md:w-1/1 md:mr-2 md:mb-0 mb-2">
                 <input
                   type="text"
-                  className="w-full h-[66px] rounded-lg border-[#007E85] focus:outline-none hover:border-[#007E85]"
+                  className="w-full h-[66px] rounded-lg border-[#007E85] hover:border-[#007E85] focus:outline-none focus:ring-0"
                   placeholder="Name"
                 />
               </div>
               <div className="md:w-1/1 md:mr-2 md:mb-0 mb-2">
                 <input
                   type="text"
-                  className="w-full h-[66px] rounded-lg border-[#007E85] hover:border-[#007E85]"
+                  className="w-full h-[66px] rounded-lg border-[#007E85] hover:border-[#007E85] focus:outline-none focus:ring-0"
                   placeholder="Speciality"
                 />
               </div>
@@ -817,14 +819,16 @@ const LandingPage = () => {
         </div>
 
         <div className="py-8">
-          <h2 className="text-center mb-6 font-semibold text-xl">Subscribe to our newsletter</h2>
+          <h2 className="text-center mb-6 font-semibold text-xl">
+            Subscribe to our newsletter
+          </h2>
           <div className="flex flex-wrap justify-center gap-4">
             <input
               type="text"
               name="email"
               id="email"
               placeholder="Enter your email"
-              className="bg-[#FFFFFF] focus:outline-none border-none rounded-full w-[320px]"
+              className="bg-[#FFFFFF] border-none rounded-full w-[320px] focus:outline-none focus:ring-0"
             />
             <button className="bg-[#007E85] border-teal-400 rounded-full w-32 h-14 text-white font-semibold">
               Suscribe
@@ -849,8 +853,8 @@ const LandingPage = () => {
               </h1>
             </div>
             <p className="py-2 px-2">
-              Copyright &copy; {new Date().getFullYear()} BRIX Templates <br />
-              | All Rights Reserved
+              Copyright &copy; {new Date().getFullYear()} BRIX Templates <br />|
+              All Rights Reserved
             </p>
           </div>
           <div className="col-span-8">

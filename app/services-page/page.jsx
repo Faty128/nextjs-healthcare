@@ -15,7 +15,7 @@ import { RiInstagramFill } from "react-icons/ri";
 const ServicesPage = () => {
   return (
     <div className="bg-[#ECECEC]">
-      <div className="relative bg-[url('/images/Rectangle-1548.png')] bg-cover bg-center h-[100%] flex items-center justify-center">
+      <div className="relative bg-[url('/images/Rectangle-1548.png')] bg-cover bg-center h-[100%] flex items-center justify-center py-8">
         <div className="absolute inset-0 bg-black opacity-50"></div>
         <div className="relative z-10 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 px-4 py-4 gap-80">
           <div className="flex flex-col items-start mb-2 pt-14">
@@ -47,7 +47,7 @@ const ServicesPage = () => {
                 name="nom"
                 id="full-name"
                 placeholder="Full Name *"
-                className="border-l-0 border-gray-300 p-2 rounded-lg mb-3"
+                className="border-l-0 border-gray-300 p-2 rounded-lg mb-3 focus:outline-none focus:ring-0"
               />
 
               <label htmlFor="email" className="block">
@@ -58,7 +58,7 @@ const ServicesPage = () => {
                 name="email"
                 id="email"
                 placeholder="example@gmail.com"
-                className="border-l-0 border-gray-300 p-2 rounded-lg mb-3"
+                className="border-l-0 border-gray-300 p-2 rounded-lg mb-3 focus:outline-none focus:ring-0"
               />
 
               <label htmlFor="departement" className="block">
@@ -67,7 +67,7 @@ const ServicesPage = () => {
               <select
                 name="departement"
                 id="departement"
-                className="border border-gray-300 p-2 rounded-lg mb-3"
+                className="border border-gray-300 p-2 rounded-lg mb-3focus:outline-none focus:ring-0 "
               >
                 <option>Please Select</option>
                 {/* Ajoute des options ici */}
@@ -79,7 +79,7 @@ const ServicesPage = () => {
               <select
                 name="time"
                 id="time"
-                className="border border-gray-300 p-2 rounded-lg mb-3"
+                className="border border-gray-300 p-2 rounded-lg mb-3 focus:outline-none focus:ring-0"
               >
                 <option>4:00 Available</option>
                 {/* Ajoute des options ici */}
@@ -101,14 +101,14 @@ const ServicesPage = () => {
             <div className="md:w-1/1 md:mr-2 md:mb-0 mb-2">
               <input
                 type="text"
-                className="w-full h-[66px] rounded-lg border-[#007E85] focus:outline-none hover:border-[#007E85]"
+                className="w-full h-[66px] rounded-lg border-[#007E85] hover:border-[#007E85] focus:outline-none focus:ring-0"
                 placeholder="Name"
               />
             </div>
             <div className="md:w-1/1 md:mr-2 md:mb-0 mb-2">
               <input
                 type="text"
-                className="w-full h-[66px] rounded-lg border-[#007E85] hover:border-[#007E85]"
+                className="w-full h-[66px] rounded-lg border-[#007E85] hover:border-[#007E85] focus:outline-none focus:ring-0"
                 placeholder="Speciality"
               />
             </div>
@@ -494,7 +494,7 @@ const ServicesPage = () => {
             name="email"
             id="email"
             placeholder="Enter your email"
-            className="bg-[#FFFFFF] focus:outline-none border-none rounded-full w-[320px]"
+            className="bg-[#FFFFFF] border-none rounded-full w-[320px] focus:outline-none focus:ring-0"
           />
           <button className="bg-[#007E85] border-teal-400 rounded-full w-32 h-14 text-white font-semibold">
             Suscribe

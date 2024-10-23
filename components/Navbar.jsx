@@ -2,8 +2,10 @@
 import React, { useState, useEffect } from "react";
 import Link from "next/link";
 import Image from "next/image";
+import { usePathname } from 'next/navigation'; // Importer usePathname
 
 const Navbar = () => {
+  const pathname = usePathname(); // Obtenir le chemin actuel
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
   const toggleMobileMenu = () => {
@@ -21,8 +23,10 @@ const Navbar = () => {
     return () => window.removeEventListener("resize", handleResize);
   }, []);
 
+  const isActive = (path) => pathname === path; // Vérifier le chemin actif
+
   return (
-    <nav className="bg-[#ECECEC]">
+    <nav className="bg-[#ECECEC] fixed top-0 left-0 w-full z-50">
       <div className="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
         <div className="relative flex h-16 items-center justify-between">
           <div className="absolute inset-y-0 left-0 flex items-center sm:hidden">
@@ -79,31 +83,31 @@ const Navbar = () => {
               <div className="flex flex-wrap space-x-5">
                 <Link
                   href="/"
-                  className="rounded-md px-3 py-2 text-xl font-roboto font-sans font-semibold text-[#007E85] underline hover:bg-gray-300 hover:text-teal"
+                  className={`rounded-md px-3 py-2 text-xl font-roboto font-sans font-semibold ${isActive('/landing-page') ? 'text-[#007E85] underline bg-gray-300' : 'text-black'} hover:bg-gray-300 hover:text-[#007E85]`}
                 >
                   Home
                 </Link>
                 <Link
                   href="/services-page"
-                  className="rounded-md px-3 py-2 text-xl font-roboto font-sans font-semibold text-black hover:text-[#007E85] hover:underline hover:bg-gray-300"
+                  className={`rounded-md px-3 py-2 text-xl font-roboto font-sans font-semibold ${isActive('/services-page') ? 'text-[#007E85] underline bg-gray-300' : 'text-black'} hover:bg-gray-300 hover:text-[#007E85]`}
                 >
                   Services
                 </Link>
                 <Link
                   href="/contact-page"
-                  className="rounded-md px-3 py-2 text-xl font-roboto font-sans font-semibold text-black hover:bg-gray-300 hover:text-[#007E85] hover:underline"
+                  className={`rounded-md px-3 py-2 text-xl font-roboto font-sans font-semibold ${isActive('/contact-page') ? 'text-[#007E85] underline bg-gray-300' : 'text-black'} hover:bg-gray-300 hover:text-[#007E85]`}
                 >
                   Contact Us
                 </Link>
                 <Link
-                  href="#"
-                  className="rounded-md px-3 py-2 text-xl font-roboto font-sans font-semibold text-black hover:bg-gray-300 hover:text-[#007E85] hover:underline"
+                  href="/help"
+                  className={`rounded-md px-3 py-2 text-xl font-roboto font-sans font-semibold ${isActive('/help') ? 'text-[#007E85] underline bg-gray-300' : 'text-black'} hover:bg-gray-300 hover:text-[#007E85]`}
                 >
                   Help
                 </Link>
                 <Link
-                  href="#"
-                  className="rounded-md px-3 py-2 text-xl font-roboto font-sans font-semibold text-black hover:bg-gray-300 hover:text-[#007E85] hover:underline"
+                  href="/blogs"
+                  className={`rounded-md px-3 py-2 text-xl font-roboto font-sans font-semibold ${isActive('/blogs') ? 'text-[#007E85] underline bg-gray-300' : 'text-black'} hover:bg-gray-300 hover:text-[#007E85]`}
                 >
                   Blogs
                 </Link>
@@ -126,32 +130,32 @@ const Navbar = () => {
       >
         <div className="space-y-1 px-2 pb-3 pt-2">
           <Link
-            href="/"
-            className="block rounded-md bg-gray-300 px-3 py-2 text-base font-roboto font-sans font-bold text-[#007E85] underline hover:bg-gray-300 hover:text-teal"
+            href="/landing-page"
+            className={`block rounded-md px-3 py-2 text-base font-roboto font-sans font-bold ${isActive('/landing-page') ? 'text-[#007E85] underline' : 'text-black'} hover:bg-gray-300 hover:text-[#007E85]`}
           >
             Home
           </Link>
           <Link
             href="/services-page"
-            className="block rounded-md px-3 py-2 text-base font-roboto font-sans font-bold text-black hover:bg-gray-300 hover:text-[#007E85] hover:underline"
+            className={`block rounded-md px-3 py-2 text-base font-roboto font-sans font-bold ${isActive('/services-page') ? 'text-[#007E85] underline' : 'text-black'} hover:bg-gray-300 hover:text-[#007E85]`}
           >
             Services
           </Link>
           <Link
             href="/contact-page"
-            className="block rounded-md px-3 py-2 text-base font-roboto font-sans font-bold text-black hover:bg-gray-300 hover:text-[#007E85] hover:underline"
+            className={`block rounded-md px-3 py-2 text-base font-roboto font-sans font-bold ${isActive('/contact-page') ? 'text-[#007E85] underline' : 'text-black'} hover:bg-gray-300 hover:text-[#007E85]`}
           >
             Contact Us
           </Link>
           <Link
             href="/help"
-            className="block rounded-md px-3 py-2 text-base font-roboto font-sans font-bold text-black hover:bg-gray-300 hover:text-[#007E85] hover:underline"
+            className={`block rounded-md px-3 py-2 text-base font-roboto font-sans font-bold ${isActive('/help') ? 'text-[#007E85] underline' : 'text-black'} hover:bg-gray-300 hover:text-[#007E85]`}
           >
             Help
           </Link>
           <Link
             href="/blogs"
-            className="block rounded-md px-3 py-2 text-base font-roboto font-sans font-bold text-black hover:bg-gray-300 hover:text-[#007E85] hover:underline"
+            className={`block rounded-md px-3 py-2 text-base font-roboto font-sans font-bold ${isActive('/blogs') ? 'text-[#007E85] underline' : 'text-black'} hover:bg-gray-300 hover:text-[#007E85]`}
           >
             Blogs
           </Link>

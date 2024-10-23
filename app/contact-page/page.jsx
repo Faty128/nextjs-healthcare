@@ -175,7 +175,7 @@ const ContactPage = () => {
             name="email"
             id="email"
             placeholder="Enter your email"
-            className="bg-[#FFFFFF] focus:outline-none border-none rounded-full w-[320px]"
+            className="bg-[#FFFFFF] border-none rounded-full w-[320px] focus:outline-none focus:ring-0"
           />
           <button className="bg-[#007E85] border-teal-400 rounded-full w-32 h-14 text-white font-semibold">
             Suscribe
