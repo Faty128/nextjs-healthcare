@@ -15,7 +15,7 @@ import { RiInstagramFill } from "react-icons/ri";
 const ServicesPage = () => {
   return (
     <div className="bg-[#ECECEC]">
-      <div className="relative bg-[url('/images/Rectangle-1548.png')] bg-cover bg-center h-[100vh] flex items-center justify-center">
+      <div className="relative bg-[url('/images/Rectangle-1548.png')] bg-cover bg-center h-[100%] flex items-center justify-center">
         <div className="absolute inset-0 bg-black opacity-50"></div>
         <div className="relative z-10 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 px-4 py-4 gap-80">
           <div className="flex flex-col items-start mb-2 pt-14">
@@ -36,7 +36,7 @@ const ServicesPage = () => {
             </div>
           </div>
 
-          <div className="flex flex-col rounded-lg bg-[#FAFAFA] h-[75vh] p-4 mb-8">
+          <div className="flex flex-col rounded-lg bg-[#FAFAFA] h-70 p-4 mt-8">
             <h1 className="text-black font-bold mt-3">Book Appointment</h1>
             <div className="mt-2">
               <label htmlFor="name" className="block">
@@ -85,7 +85,7 @@ const ServicesPage = () => {
                 {/* Ajoute des options ici */}
               </select>
             </div>
-            <button className="mr-2 bg-[#007E85] text-white py-2 px-4 rounded-lg mt-3">
+            <button className="mr-2 bg-[#007E85] text-white py-2  rounded-lg mt-3">
               Book Appointement
             </button>
           </div>
