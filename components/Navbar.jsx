@@ -83,31 +83,31 @@ const Navbar = () => {
               <div className="flex flex-wrap space-x-5">
                 <Link
                   href="/"
-                  className={`rounded-md px-3 py-2 text-xl font-roboto font-sans font-semibold ${isActive('/landing-page') ? 'text-[#007E85] underline bg-gray-300' : 'text-black'} hover:bg-gray-300 hover:text-[#007E85]`}
+                  className={`rounded-md px-3 py-2 text-xl font-roboto font-sans font-semibold ${isActive('/landing-page') ? 'text-[#007E85] underline' : 'text-black'} hover:text-[#007E85]`}
                 >
                   Home
                 </Link>
                 <Link
                   href="/services-page"
-                  className={`rounded-md px-3 py-2 text-xl font-roboto font-sans font-semibold ${isActive('/services-page') ? 'text-[#007E85] underline bg-gray-300' : 'text-black'} hover:bg-gray-300 hover:text-[#007E85]`}
+                  className={`rounded-md px-3 py-2 text-xl font-roboto font-sans font-semibold ${isActive('/services-page') ? 'text-[#007E85] underline' : 'text-black'} hover:text-[#007E85]`}
                 >
                   Services
                 </Link>
                 <Link
                   href="/contact-page"
-                  className={`rounded-md px-3 py-2 text-xl font-roboto font-sans font-semibold ${isActive('/contact-page') ? 'text-[#007E85] underline bg-gray-300' : 'text-black'} hover:bg-gray-300 hover:text-[#007E85]`}
+                  className={`rounded-md px-3 py-2 text-xl font-roboto font-sans font-semibold ${isActive('/contact-page') ? 'text-[#007E85] underline' : 'text-black'} hover:text-[#007E85]`}
                 >
                   Contact Us
                 </Link>
                 <Link
                   href="/help"
-                  className={`rounded-md px-3 py-2 text-xl font-roboto font-sans font-semibold ${isActive('/help') ? 'text-[#007E85] underline bg-gray-300' : 'text-black'} hover:bg-gray-300 hover:text-[#007E85]`}
+                  className={`rounded-md px-3 py-2 text-xl font-roboto font-sans font-semibold ${isActive('/help') ? 'text-[#007E85] underline' : 'text-black'} hover:text-[#007E85]`}
                 >
                   Help
                 </Link>
                 <Link
                   href="/blogs"
-                  className={`rounded-md px-3 py-2 text-xl font-roboto font-sans font-semibold ${isActive('/blogs') ? 'text-[#007E85] underline bg-gray-300' : 'text-black'} hover:bg-gray-300 hover:text-[#007E85]`}
+                  className={`rounded-md px-3 py-2 text-xl font-roboto font-sans font-semibold ${isActive('/blogs') ? 'text-[#007E85] underline' : 'text-black'} hover:text-[#007E85]`}
                 >
                   Blogs
                 </Link>
@@ -131,31 +131,31 @@ const Navbar = () => {
         <div className="space-y-1 px-2 pb-3 pt-2">
           <Link
             href="/landing-page"
-            className={`block rounded-md px-3 py-2 text-base font-roboto font-sans font-bold ${isActive('/landing-page') ? 'text-[#007E85] underline' : 'text-black'} hover:bg-gray-300 hover:text-[#007E85]`}
+            className={`block rounded-md px-3 py-2 text-base font-roboto font-sans font-bold ${isActive('/landing-page') ? 'text-[#007E85] underline' : 'text-black'} hover:text-[#007E85]`}
           >
             Home
           </Link>
           <Link
             href="/services-page"
-            className={`block rounded-md px-3 py-2 text-base font-roboto font-sans font-bold ${isActive('/services-page') ? 'text-[#007E85] underline' : 'text-black'} hover:bg-gray-300 hover:text-[#007E85]`}
+            className={`block rounded-md px-3 py-2 text-base font-roboto font-sans font-bold ${isActive('/services-page') ? 'text-[#007E85] underline' : 'text-black'} hover:text-[#007E85]`}
           >
             Services
           </Link>
           <Link
             href="/contact-page"
-            className={`block rounded-md px-3 py-2 text-base font-roboto font-sans font-bold ${isActive('/contact-page') ? 'text-[#007E85] underline' : 'text-black'} hover:bg-gray-300 hover:text-[#007E85]`}
+            className={`block rounded-md px-3 py-2 text-base font-roboto font-sans font-bold ${isActive('/contact-page') ? 'text-[#007E85] underline' : 'text-black'} hover:text-[#007E85]`}
           >
             Contact Us
           </Link>
           <Link
             href="/help"
-            className={`block rounded-md px-3 py-2 text-base font-roboto font-sans font-bold ${isActive('/help') ? 'text-[#007E85] underline' : 'text-black'} hover:bg-gray-300 hover:text-[#007E85]`}
+            className={`block rounded-md px-3 py-2 text-base font-roboto font-sans font-bold ${isActive('/help') ? 'text-[#007E85] underline' : 'text-black'} hover:text-[#007E85]`}
           >
             Help
           </Link>
           <Link
             href="/blogs"
-            className={`block rounded-md px-3 py-2 text-base font-roboto font-sans font-bold ${isActive('/blogs') ? 'text-[#007E85] underline' : 'text-black'} hover:bg-gray-300 hover:text-[#007E85]`}
+            className={`block rounded-md px-3 py-2 text-base font-roboto font-sans font-bold ${isActive('/blogs') ? 'text-[#007E85] underline' : 'text-black'} hover:text-[#007E85]`}
           >
             Blogs
           </Link>
