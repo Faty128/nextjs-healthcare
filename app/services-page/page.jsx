@@ -18,7 +18,7 @@ const ServicesPage = () => {
       <div className="relative bg-[url('/images/Rectangle-1548.png')] bg-cover bg-center h-[100%] flex items-center justify-center py-8">
         <div className="absolute inset-0 bg-black opacity-50"></div>
         <div className="relative z-10 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 px-4 py-4 gap-80">
-          <div className="flex flex-col items-start mb-2 pt-14">
+          <div className="flex flex-col items-start mb-2 pt-32">
             <h1 className="text-white text-5xl font-bold font-sans leading-tight">
               Meet the Best <br /> Hospital
             </h1>
@@ -36,7 +36,7 @@ const ServicesPage = () => {
             </div>
           </div>
 
-          <div className="flex flex-col rounded-lg bg-[#FAFAFA] h-70 p-4 mt-8">
+          <div className="flex flex-col rounded-lg bg-[#FAFAFA] h-70 p-6 mt-14">
             <h1 className="text-black font-bold mt-3">Book Appointment</h1>
             <div className="mt-2">
               <label htmlFor="name" className="block">
@@ -47,7 +47,7 @@ const ServicesPage = () => {
                 name="nom"
                 id="full-name"
                 placeholder="Full Name *"
-                className="border-l-0 border-gray-300 p-2 rounded-lg mb-3 focus:outline-none focus:ring-0"
+                className="border-l-0 border-gray-300 p-2 rounded-lg mb-3 focus:outline-none focus:ring-0 min-w-full"
               />
 
               <label htmlFor="email" className="block">
@@ -58,7 +58,7 @@ const ServicesPage = () => {
                 name="email"
                 id="email"
                 placeholder="example@gmail.com"
-                className="border-l-0 border-gray-300 p-2 rounded-lg mb-3 focus:outline-none focus:ring-0"
+                className="border-l-0 border-gray-300 p-2 rounded-lg mb-3 focus:outline-none focus:ring-0 min-w-full"
               />
 
               <label htmlFor="departement" className="block">
@@ -67,7 +67,7 @@ const ServicesPage = () => {
               <select
                 name="departement"
                 id="departement"
-                className="border border-gray-300 p-2 rounded-lg mb-3focus:outline-none focus:ring-0 "
+                className="border border-gray-300 p-2 rounded-lg mb-3focus:outline-none focus:ring-0 min-w-full"
               >
                 <option>Please Select</option>
                 {/* Ajoute des options ici */}
@@ -79,7 +79,7 @@ const ServicesPage = () => {
               <select
                 name="time"
                 id="time"
-                className="border border-gray-300 p-2 rounded-lg mb-3 focus:outline-none focus:ring-0"
+                className="border border-gray-300 p-2 rounded-lg mb-3 focus:outline-none focus:ring-0 min-w-full"
               >
                 <option>4:00 Available</option>
                 {/* Ajoute des options ici */}
@@ -92,38 +92,38 @@ const ServicesPage = () => {
         </div>
       </div>
 
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 px-4 py-4">
-        <div className="col-span-1 md:col-span-4 rounded-lg bg-[#FAFAFA] p-4">
-          <h1 className="font-bold capitalize text-black text-3xl">
-            Find a Doctor
-          </h1>
-          <div className="flex flex-col mx-auto justify-between md:flex-row items-center py-4">
-            <div className="md:w-1/1 md:mr-2 md:mb-0 mb-2">
-              <input
-                type="text"
-                className="w-full h-[66px] rounded-lg border-[#007E85] hover:border-[#007E85] focus:outline-none focus:ring-0"
-                placeholder="Name"
-              />
-            </div>
-            <div className="md:w-1/1 md:mr-2 md:mb-0 mb-2">
-              <input
-                type="text"
-                className="w-full h-[66px] rounded-lg border-[#007E85] hover:border-[#007E85] focus:outline-none focus:ring-0"
-                placeholder="Speciality"
-              />
-            </div>
-            <div className="flex md:w-1/1 items-center gap-4">
-              <p>Available</p>
-              <BiToggleRight className="text-5xl bg-none text-[#007E85]" />
-            </div>
-            <div className="bg-[#007E85] md:w-1/1 w-[100px]  h-[66px] rounded-lg text-center py-4">
-              <button className="text-xl text-white">Search</button>
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 p-8 py-8 m-4">
+          <div className="col-span-1 md:col-span-4 rounded-lg bg-[#FAFAFA] p-4">
+            <h1 className="font-bold capitalize text-black text-3xl">
+              Find a Doctor
+            </h1>
+            <div className="flex flex-col mx-auto justify-between md:flex-row items-center py-4">
+              <div className="md:w-1/2 md:mr-4 md:mb-0 mb-2">
+                <input
+                  type="text"
+                  className="w-full h-[66px] rounded-lg border-[#007E85] hover:border-[#007E85] focus:outline-none focus:ring-0"
+                  placeholder="Name"
+                />
+              </div>
+              <div className="md:w-1/2 md:mr-4 md:mb-0 mb-2">
+                <input
+                  type="text"
+                  className="w-full h-[66px] rounded-lg border-[#007E85] hover:border-[#007E85] focus:outline-none focus:ring-0"
+                  placeholder="Speciality"
+                />
+              </div>
+              <div className="flex md:w-1/3 items-center gap-5 ml-16">
+                <p className="text-xl">Available</p>
+                <BiToggleRight className="text-6xl bg-none text-[#007E85]" />
+              </div>
+              <div className="bg-[#007E85] md:w-1/3   h-[66px] rounded-lg text-center py-4">
+                <button className="text-xl w-[80] text-white">Search</button>
+              </div>
             </div>
           </div>
         </div>
-      </div>
 
-      <div className="py-8">
+      <div className="py-8 m-4 p-5">
         <h2 className="text-3xl font-bold text-center mb-5 text-[#007E85]">
           Services we provide
         </h2>
@@ -132,13 +132,13 @@ const ServicesPage = () => {
           <br /> elementum tempus hac tellus libero accumsan.
         </p>
 
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-4 p-6">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-5 p-6">
           <div className="p-4 bg-[#FAFAFA] rounded-3xl shadow-md">
             <Image
               src="/images/Container (1).png"
               alt="Dental Image"
-              width={360}
-              height={360}
+              width={500}
+              height={500}
               className="object-cover mb-5"
             />
             <div>
@@ -159,8 +159,8 @@ const ServicesPage = () => {
             <Image
               src="/images/Container (2).png"
               alt="Bones treatments"
-              width={360}
-              height={360}
+              width={500}
+              height={500}
               className="object-cover mb-5"
             />
             <div>
@@ -181,8 +181,8 @@ const ServicesPage = () => {
             <Image
               src="/images/Container (3).png"
               alt="Diagnosis"
-              width={360}
-              height={360}
+              width={500}
+              height={500}
               className="object-cover mb-5"
             />
             <div>
@@ -200,13 +200,13 @@ const ServicesPage = () => {
           </div>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-4 p-6">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-5 p-6">
           <div className="p-4 bg-[#FAFAFA] rounded-3xl shadow-md">
             <Image
               src="/images/Container (4).png"
               alt="Cardiology"
-              width={360}
-              height={360}
+              width={500}
+              height={500}
               className="object-cover mb-5"
             />
             <div>
@@ -226,8 +226,8 @@ const ServicesPage = () => {
             <Image
               src="/images/Container (5).png"
               alt="Surgery"
-              width={360}
-              height={360}
+              width={500}
+              height={500}
               className="object-cover mb-5"
             />
             <div>
@@ -246,8 +246,8 @@ const ServicesPage = () => {
             <Image
               src="/images/Container (6).png"
               alt="Eye care"
-              width={360}
-              height={360}
+              width={500}
+              height={500}
               className="object-cover mb-5"
             />
             <div>
@@ -266,7 +266,7 @@ const ServicesPage = () => {
         </div>
       </div>
 
-      <div className="py-8">
+      <div className="py-8 m-4">
         <h2 className="text-3xl font-bold text-center mb-5 text-[#007E85]">
           What our customers say
         </h2>
@@ -276,8 +276,8 @@ const ServicesPage = () => {
           Classical physics: Newtonian mechanics
         </p>
 
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-4 p-6">
-          <div className="p-6 bg-[#FAFAFA] text-start rounded-3xl shadow-md">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 px-10 m-10 py-5">
+          <div className="p-6 bg-[#FAFAFA] text-start rounded-lg shadow-md">
             <div className="flex justify-start items-center gap-2 text-[#F3CD03] mb-5">
               <FaStar />
               <FaStar />
@@ -295,11 +295,11 @@ const ServicesPage = () => {
               alt="img-1"
               width={100}
               height={100}
-              className="object-cover mb-5"
+              className="object-cover mb-2"
             />
           </div>
 
-          <div className="p-6 bg-[#FAFAFA] text-start rounded-3xl shadow-md">
+          <div className="p-6 bg-[#FAFAFA] text-start rounded-lg shadow-md">
             <div className="flex justify-start items-center gap-2 text-[#F3CD03] mb-5">
               <FaStar />
               <FaStar />
@@ -317,11 +317,11 @@ const ServicesPage = () => {
               alt="img-2"
               width={100}
               height={100}
-              className="object-cover mb-5"
+              className="object-cover mb-2"
             />
           </div>
 
-          <div className="p-6 bg-[#FAFAFA] text-start rounded-3xl shadow-md">
+          <div className="p-6 bg-[#FAFAFA] text-start rounded-lg shadow-md">
             <div className="flex justify-start items-center gap-2 text-[#F3CD03] mb-5">
               <FaStar />
               <FaStar />
@@ -339,13 +339,13 @@ const ServicesPage = () => {
               alt="img-3"
               width={100}
               height={100}
-              className="object-cover mb-5"
+              className="object-cover mb-2"
             />
           </div>
         </div>
       </div>
 
-      <div className="py-8">
+      <div className="py-8 m-4">
         <h2 className="text-4xl font-bold text-center mb-5 text-gray-700">
           FAQ
         </h2>
@@ -353,8 +353,8 @@ const ServicesPage = () => {
           Problems trying to resolve the conflict between <br />
           the two major realms of Classical physics: Newtonian mechanics
         </p>
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-4 p-6">
-          <div className="p-4 bg-[#FAFAFA] rounded-3xl shadow-md">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 px-10 m-10 py-5">
+          <div className="p-6 bg-[#FAFAFA] rounded-xl shadow-md">
             <div className="flex items-start justify-start gap-4">
               <IoIosArrowForward className="text-2xl text-teal-500" />
               <div>
@@ -368,7 +368,7 @@ const ServicesPage = () => {
             </div>
           </div>
 
-          <div className="p-4 bg-[#FAFAFA] rounded-3xl shadow-md">
+          <div className="p-6 bg-[#FAFAFA] rounded-xl shadow-md">
             <div className="flex items-start justify-start gap-4">
               <IoIosArrowForward className="text-2xl text-teal-500" />
               <div>
@@ -382,7 +382,7 @@ const ServicesPage = () => {
             </div>
           </div>
 
-          <div className="p-4 bg-[#FAFAFA] rounded-3xl shadow-md">
+          <div className="p-6 bg-[#FAFAFA] rounded-xl shadow-md">
             <div className="flex items-start justify-start gap-4">
               <IoIosArrowForward className="text-2xl text-teal-500" />
               <div>
@@ -396,8 +396,8 @@ const ServicesPage = () => {
             </div>
           </div>
         </div>
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-4 p-6">
-          <div className="p-4 bg-[#FAFAFA] rounded-3xl shadow-md">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 px-10 m-10 py-5">
+          <div className="p-6 bg-[#FAFAFA] rounded-xl shadow-md">
             <div className="flex items-start justify-start gap-4">
               <IoIosArrowForward className="text-2xl text-teal-500" />
               <div>
@@ -411,7 +411,7 @@ const ServicesPage = () => {
             </div>
           </div>
 
-          <div className="p-4 bg-[#FAFAFA] rounded-3xl shadow-md">
+          <div className="p-6 bg-[#FAFAFA] rounded-xl shadow-md">
             <div className="flex items-start justify-start gap-4">
               <IoIosArrowForward className="text-2xl text-teal-500" />
               <div>
@@ -425,7 +425,7 @@ const ServicesPage = () => {
             </div>
           </div>
 
-          <div className="p-4 bg-[#FAFAFA] rounded-3xl shadow-md">
+          <div className="p-6 bg-[#FAFAFA] rounded-xl shadow-md">
             <div className="flex items-start justify-start gap-4">
               <IoIosArrowForward className="text-2xl text-teal-500" />
               <div>
@@ -439,8 +439,8 @@ const ServicesPage = () => {
             </div>
           </div>
         </div>
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-4 p-6">
-          <div className="p-4 bg-[#FAFAFA] rounded-3xl shadow-md">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 px-10 m-10 py-5">
+          <div className="p-6 bg-[#FAFAFA] rounded-xl shadow-md">
             <div className="flex items-start justify-start gap-4">
               <IoIosArrowForward className="text-2xl text-teal-500" />
               <div>
@@ -454,7 +454,7 @@ const ServicesPage = () => {
             </div>
           </div>
 
-          <div className="p-4 bg-[#FAFAFA] rounded-3xl shadow-md">
+          <div className="p-6 bg-[#FAFAFA] rounded-xl shadow-md">
             <div className="flex items-start justify-start gap-4">
               <IoIosArrowForward className="text-2xl text-teal-500" />
               <div>
@@ -468,7 +468,7 @@ const ServicesPage = () => {
             </div>
           </div>
 
-          <div className="p-4 bg-[#FAFAFA] rounded-3xl shadow-md">
+          <div className="p-6 bg-[#FAFAFA] rounded-xl shadow-md">
             <div className="flex items-start justify-start gap-4">
               <IoIosArrowForward className="text-2xl text-teal-500" />
               <div>
@@ -484,7 +484,7 @@ const ServicesPage = () => {
         </div>
       </div>
 
-      <div className="py-8">
+      <div className="py-8 m-4">
         <h2 className="text-center mb-6 font-semibold text-xl">
           Subscribe to our newsletter
         </h2>

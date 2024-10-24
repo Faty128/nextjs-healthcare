@@ -21,20 +21,20 @@ export const metadata = {
 const LandingPage = () => {
   return (
     <div className="bg-[#ECECEC]">
-      <div className="container mx-auto p-4">
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-4 py-4">
+      <div className="container mx-auto p-5 m-4">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-4 py-4 mt-24">
           <div className="p-4 flex flex-col">
-            <div className="mt-14">
-              <h2 className="text-2xl font-bold capitalize">
+            <div className="mt-20">
+              <h2 className="text-2xl font-sans font-bold capitalize">
                 <span className="text-[#333333] mr-2">Providing Quality</span>
                 <span className="text-[#007E85] mr-2">Healthcare</span>
-                <span className="text-[#333333] mr-2">for a</span> <br />
+                <span className="text-[#333333] mr-2">For a</span> <br />
                 <span className="text-green-400 mr-2">Brighter</span>
                 <span className="text-[#333333] mr-2"> and </span>
                 <span className="text-green-400 mr-2">Healthy</span>
                 <span className="text-[#333333] mr-2">Future</span>
               </h2>
-              <p className="mt-6 text-[#504f4f] font-medium text-lg leading-tight">
+              <p className="mt-6 text-[#504f4f] font-medium text-xl leading-tight">
                 At our hospital, we are dedicated to providing exceptional
                 <br />
                 medical care to our patients and their families. Our <br />
@@ -96,64 +96,64 @@ const LandingPage = () => {
               Find a Doctor
             </h1>
             <div className="flex flex-col mx-auto justify-between md:flex-row items-center py-4">
-              <div className="md:w-1/1 md:mr-2 md:mb-0 mb-2">
+              <div className="md:w-1/2 md:mr-4 md:mb-0 mb-2">
                 <input
                   type="text"
                   className="w-full h-[66px] rounded-lg border-[#007E85] hover:border-[#007E85] focus:outline-none focus:ring-0"
                   placeholder="Name"
                 />
               </div>
-              <div className="md:w-1/1 md:mr-2 md:mb-0 mb-2">
+              <div className="md:w-1/2 md:mr-4 md:mb-0 mb-2">
                 <input
                   type="text"
                   className="w-full h-[66px] rounded-lg border-[#007E85] hover:border-[#007E85] focus:outline-none focus:ring-0"
                   placeholder="Speciality"
                 />
               </div>
-              <div className="flex md:w-1/1 items-center gap-4">
-                <p>Available</p>
-                <BiToggleRight className="text-5xl bg-none text-[#007E85]" />
+              <div className="flex md:w-1/3 items-center gap-5 ml-16">
+                <p className="text-xl">Available</p>
+                <BiToggleRight className="text-6xl bg-none text-[#007E85]" />
               </div>
-              <div className="bg-[#007E85] md:w-1/1 w-[100px]  h-[66px] rounded-lg text-center py-4">
-                <button className="text-xl text-white">Search</button>
+              <div className="bg-[#007E85] md:w-1/3   h-[66px] rounded-lg text-center py-4">
+                <button className="text-xl w-[80] text-white">Search</button>
               </div>
             </div>
           </div>
         </div>
 
-        <div className="py-10">
+        <div className="py-8 m-4">
           <h2 className="text-3xl text-center text-[#007E85] font-bold mb-4">
             Our results in numbers
           </h2>
-          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-4 py-8">
-            <div className="flex items-center justify-center text-center">
-              <div>
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-20 py-8 items-center justify-between">
+            <div className="flex text-center">
+              <div className="ml-auto">
                 <span className="text-[#007E85] text-3xl font-bold">99%</span>
-                <p className="text-[#333333] text-xl font-sans font-semibold leading-loose">
+                <p className="text-[#333333] text-2xl font-sans font-semibold leading-loose">
                   Customer satisfaction
                 </p>
               </div>
             </div>
-            <div className="flex  justify-center items-center text-center">
-              <div>
+            <div className="flex text-center">
+              <div className="m-auto">
                 <span className="text-[#007E85] text-3xl font-bold">15k</span>
-                <p className="text-[#333333] text-xl font-sans font-semibold leading-loose">
+                <p className="text-[#333333] text-2xl font-sans font-semibold leading-loose">
                   Online Patients
                 </p>
               </div>
             </div>
-            <div className="flex items-center justify-center text-center">
-              <div>
+            <div className="flex text-center">
+              <div className="m-auto">
                 <span className="text-[#007E85] text-3xl font-bold">12k</span>
-                <p className="text-[#333333] text-xl font-sans font-semibold leading-loose">
+                <p className="text-[#333333] text-2xl font-sans font-semibold leading-loose">
                   Patients Recovered
                 </p>
               </div>
             </div>
-            <div className="flex items-center justify-center text-center ">
-              <div>
+            <div className="flex text-center ">
+              <div className="m-auto">
                 <span className="text-[#007E85] text-3xl font-bold">240%</span>
-                <p className="text-[#333333] text-xl font-sans font-semibold leading-loose">
+                <p className="text-[#333333] text-2xl font-sans font-semibold leading-loose">
                   Company growth
                 </p>
               </div>
@@ -181,7 +181,7 @@ const LandingPage = () => {
               </div>
             </div>
           </div>
-          <div className="flex items-center justify-center">
+          <div className="flex items-center justify-end">
             <Image
               src="/images/Container.png"
               alt="Container Image"
@@ -192,7 +192,7 @@ const LandingPage = () => {
           </div>
         </div>
 
-        <div className="py-8">
+        <div className="py-8 m-4">
           <h2 className="text-3xl font-bold text-center mb-5 text-[#007E85]">
             Services we provide
           </h2>
@@ -206,8 +206,8 @@ const LandingPage = () => {
               <Image
                 src="/images/Container (1).png"
                 alt="Dental Image"
-                width={360}
-                height={360}
+                width={500}
+                height={500}
                 className="object-cover mb-5"
               />
               <div>
@@ -224,12 +224,12 @@ const LandingPage = () => {
               </div>
             </div>
 
-            <div className="p-4 bg-[#FAFAFA] rounded-lg shadow-md">
+            <div className="p-4 bg-[#FAFAFA] rounded-3xl shadow-md">
               <Image
                 src="/images/Container (2).png"
                 alt="Dental Image"
-                width={360}
-                height={360}
+                width={500}
+                height={500}
                 className="object-cover mb-5"
               />
               <div>
@@ -246,12 +246,12 @@ const LandingPage = () => {
               </div>
             </div>
 
-            <div className="p-4 bg-[#FAFAFA] rounded-lg shadow-md">
+            <div className="p-4 bg-[#FAFAFA] rounded-3xl shadow-md">
               <Image
                 src="/images/Container (3).png"
                 alt="Dental Image"
-                width={360}
-                height={360}
+                width={500}
+                height={500}
                 className="object-cover mb-5"
               />
               <div>
@@ -274,8 +274,8 @@ const LandingPage = () => {
               <Image
                 src="/images/Container (4).png"
                 alt="Dental Image"
-                width={360}
-                height={360}
+                width={500}
+                height={500}
                 className="object-cover mb-5"
               />
               <div>
@@ -295,8 +295,8 @@ const LandingPage = () => {
               <Image
                 src="/images/Container (5).png"
                 alt="Dental Image"
-                width={360}
-                height={360}
+                width={500}
+                height={500}
                 className="object-cover mb-5"
               />
               <div>
@@ -317,8 +317,8 @@ const LandingPage = () => {
               <Image
                 src="/images/Container (6).png"
                 alt="Dental Image"
-                width={360}
-                height={360}
+                width={500}
+                height={500}
                 className="object-cover mb-5"
               />
               <div>
@@ -337,7 +337,7 @@ const LandingPage = () => {
           </div>
         </div>
 
-        <div className="py-8">
+        <div className="py-8 m-4 px-4">
           <h2 className="text-3xl font-bold text-center mb-5 text-[#007E85]">
             Meet our team members
           </h2>
@@ -346,19 +346,20 @@ const LandingPage = () => {
             gravida <br /> malesuada quam commodo id integer nam.
           </p>
 
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
-            <div className="p-4 bg-[#FAFAFA] text-center rounded-3xl shadow-md">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-5">
+            <div className="p-6 bg-[#FAFAFA] text-center rounded-3xl shadow-md">
               <Image
                 src="/images/BG (8).png"
                 alt="John Carter"
-                width={200}
-                height={200}
-                className="object-cover mb-5 mx-auto"
+                width={150}
+                height={150}
+                className="object-cover mb-5 mx-auto mt-4"
               />
               <div>
                 <h6 className="text-xl font-bold mb-4 text-[#007E85]">
                   John Carter
                 </h6>
+                <h5 className="text-xl font-semibold font-sans uppercase mb-2">ceo & co-founder</h5>
                 <p className="text-gray-700 mb-5">
                   Lorem ipsum dolor sit amet consecte tur adipiscing elit semper
                   dalaracc lacus vel facilisis volutpat est velitolm.
@@ -400,18 +401,19 @@ const LandingPage = () => {
               </div>
             </div>
 
-            <div className="p-4 bg-[#FAFAFA] text-center rounded-3xl shadow-md">
+            <div className="p-6 bg-[#FAFAFA] text-center rounded-3xl shadow-md">
               <Image
                 src="/images/BG (1).png"
                 alt="Sophie Moore"
-                width={200}
-                height={200}
-                className="object-cover mb-5 m-auto"
+                width={150}
+                height={150}
+                className="object-cover mb-5 mx-auto mt-4"
               />
               <div>
                 <h6 className="text-xl font-bold mb-4 text-[#007E85]">
                   Sophie Moore
                 </h6>
+                <h5 className="text-xl font-semibold font-sans uppercase mb-2">dental specialist</h5>
                 <p className="text-gray-700 mb-5">
                   Lorem ipsum dolor sit amet consecte tur adipiscing elit semper
                   dalaracc lacus vel facilisis volutpat est velitolm.
@@ -453,18 +455,19 @@ const LandingPage = () => {
               </div>
             </div>
 
-            <div className="p-4 bg-[#FAFAFA] text-center rounded-3xl shadow-md">
+            <div className="p-6 bg-[#FAFAFA] text-center rounded-3xl shadow-md">
               <Image
                 src="/images/BG.png"
                 alt="Matt Cannon"
-                width={200}
-                height={200}
-                className="object-cover mb-5 m-auto"
+                width={150}
+                height={150}
+                className="object-cover mb-5 mx-auto mt-4"
               />
               <div>
                 <h6 className="text-xl font-bold mb-4 text-[#007E85]">
                   Matt Cannon
                 </h6>
+                <h5 className="text-xl font-semibold font-sans uppercase mb-2">orthopedic</h5>
                 <p className="text-gray-700 mb-5">
                   Lorem ipsum dolor sit amet consecte tur adipiscing elit semper
                   dalaracc lacus vel facilisis volutpat est velitolm.
@@ -507,19 +510,20 @@ const LandingPage = () => {
             </div>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-4 py-4">
-            <div className="p-4 bg-[#FAFAFA] text-center rounded-3xl shadow-md">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-5 py-4">
+            <div className="p-6 bg-[#FAFAFA] text-center rounded-3xl shadow-md">
               <Image
                 src="/images/BG (2).png"
                 alt="Andy Smith"
-                width={200}
-                height={200}
-                className="object-cover mb-5 m-auto"
+                width={150}
+                height={150}
+                className="object-cover mb-5 mx-auto mt-4"
               />
               <div>
                 <h6 className="text-xl font-bold mb-4 text-[#007E85]">
                   Andy Smith
                 </h6>
+                <h5 className="text-xl font-semibold font-sans uppercase mb-2">brain surgeon</h5>
                 <p className="text-gray-700 mb-5">
                   Lorem ipsum dolor sit amet consecte tur adipiscing elit semper
                   dalaracc lacus vel facilisis volutpat est velitolm.
@@ -560,18 +564,19 @@ const LandingPage = () => {
                 </div>
               </div>
             </div>
-            <div className="p-4 bg-[#FAFAFA] text-center rounded-3xl shadow-md">
+            <div className="p-6 bg-[#FAFAFA] text-center rounded-3xl shadow-md">
               <Image
                 src="/images/BG (3).png"
                 alt="Lily Woods"
-                width={200}
-                height={200}
-                className="object-cover mb-5 m-auto"
+                width={150}
+                height={150}
+                className="object-cover mb-5 mx-auto mt-4"
               />
               <div>
                 <h6 className="text-xl font-bold mb-4 text-[#007E85]">
                   Lily Woods
                 </h6>
+                <h5 className="text-xl font-semibold font-sans uppercase mb-2">heart specialist</h5>
                 <p className="text-gray-700 mb-5">
                   Lorem ipsum dolor sit amet consecte tur adipiscing elit semper
                   dalaracc lacus vel facilisis volutpat est velitolm.
@@ -613,18 +618,19 @@ const LandingPage = () => {
               </div>
             </div>
 
-            <div className="p-4 bg-[#FAFAFA] text-center items-center rounded-3xl shadow-md">
+            <div className="p-6 bg-[#FAFAFA] text-center items-center rounded-3xl shadow-md">
               <Image
                 src="/images/BG (4).png"
                 alt="Patrick Meyer"
-                width={200}
-                height={200}
-                className="object-cover mb-5 m-auto"
+                width={150}
+                height={150}
+                className="object-cover mb-5 mx-auto mt-4"
               />
               <div>
                 <h6 className="text-xl font-bold mb-4 text-[#007E85]">
                   Patrick Meyer
                 </h6>
+                <h5 className="text-xl font-semibold font-sans uppercase mb-2">eye specialist</h5>
                 <p className="text-gray-700 mb-5">
                   Lorem ipsum dolor sit amet consecte tur adipiscing elit semper
                   dalaracc lacus vel facilisis volutpat est velitolm.
@@ -668,7 +674,7 @@ const LandingPage = () => {
           </div>
         </div>
 
-        <div className="py-8">
+        <div className="py-8 m-4 px-5">
           <h2 className="text-3xl font-bold text-center mb-5 text-[#007E85]">
             Testimonial
           </h2>
@@ -677,8 +683,8 @@ const LandingPage = () => {
             <br /> elementum tempus hac tellus libero accumsan.
           </p>
 
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
-            <div className="p-6 bg-[#FAFAFA] text-start rounded-3xl shadow-md">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-5">
+            <div className="p-8 bg-[#FAFAFA] text-start rounded-3xl shadow-md">
               <Image
                 src="/images/BG (7).png"
                 alt="John Carter"
@@ -702,7 +708,7 @@ const LandingPage = () => {
               </div>
             </div>
 
-            <div className="p-6 bg-[#FAFAFA] text-start rounded-3xl shadow-md">
+            <div className="p-8 bg-[#FAFAFA] text-start rounded-3xl shadow-md">
               <Image
                 src="/images/BG (6).png"
                 alt="John Carter"
@@ -726,7 +732,7 @@ const LandingPage = () => {
               </div>
             </div>
 
-            <div className="p-6 bg-[#FAFAFA] text-start rounded-3xl shadow-md">
+            <div className="p-8 bg-[#FAFAFA] text-start rounded-3xl shadow-md">
               <Image
                 src="/images/BG (5).png"
                 alt="John Carter"
@@ -818,7 +824,7 @@ const LandingPage = () => {
           <span className="text-8xl text-[#79d0d4]">.</span>
         </div>
 
-        <div className="py-8">
+        <div className="py-8 m-4">
           <h2 className="text-center mb-6 font-semibold text-xl">
             Subscribe to our newsletter
           </h2>
@@ -828,9 +834,9 @@ const LandingPage = () => {
               name="email"
               id="email"
               placeholder="Enter your email"
-              className="bg-[#FFFFFF] border-none rounded-full w-[320px] focus:outline-none focus:ring-0"
+              className="bg-[#FFFFFF] border-none rounded-full w-[330px] focus:outline-none focus:ring-0"
             />
-            <button className="bg-[#007E85] border-teal-400 rounded-full w-32 h-14 text-white font-semibold">
+            <button className="bg-[#007E85] border-teal-400 rounded-full w-32 h-12 text-white font-semibold">
               Suscribe
             </button>
           </div>

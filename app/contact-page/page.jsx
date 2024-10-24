@@ -165,7 +165,7 @@ const ContactPage = () => {
         </div>
       </div>
 
-      <div className="py-8">
+      <div className="py-8 m-4">
         <h2 className="text-center mb-6 font-semibold text-xl">
           Subscribe to our newsletter
         </h2>
@@ -175,9 +175,9 @@ const ContactPage = () => {
             name="email"
             id="email"
             placeholder="Enter your email"
-            className="bg-[#FFFFFF] border-none rounded-full w-[320px] focus:outline-none focus:ring-0"
+            className="bg-[#FFFFFF] border-none rounded-full w-[330px] focus:outline-none focus:ring-0"
           />
-          <button className="bg-[#007E85] border-teal-400 rounded-full w-32 h-14 text-white font-semibold">
+          <button className="bg-[#007E85] border-teal-400 rounded-full w-32 h-12 text-white font-semibold">
             Suscribe
           </button>
         </div>
